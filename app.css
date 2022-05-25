@@ -6,6 +6,8 @@
   --color-light-accent: #648b34;
   --color-light-text: #333;
   --color-light-bg: #eee;
+
+  --transition-time: 1s;
 }
 
 * {
@@ -24,6 +26,8 @@ body {
 
   background-color: var(--color-light-bg);
   color: var(--color-light-text);
+
+  transition: background-color var(--transition-time), color var(--transition-time);
 }
 
 main, footer {
@@ -41,6 +45,7 @@ footer {
 a {
   cursor: pointer;
   color: var(--color-light-accent);
+  transition: color var(--transition-time);
 }
 
 .unselectable {
