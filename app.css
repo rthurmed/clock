@@ -1,17 +1,29 @@
+:root {
+  --color-dark-accent: #798768;
+  --color-dark-text: #eee;
+  --color-dark-bg: #222;
+
+  --color-light-accent: #648b34;
+  --color-light-text: #333;
+  --color-light-bg: #eee;
+}
+
 * {
   position: relative;
   padding: 0;
   margin: 0;
-  color: #eee;
   font-family: 'Courier New', Courier, monospace;
 }
 
 body {
-  background-color: #222;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   height: 100vh;
+
+  background-color: var(--color-light-bg);
+  color: var(--color-light-text);
 }
 
 main, footer {
@@ -26,8 +38,25 @@ footer {
   margin: 2em;
 }
 
+a {
+  cursor: pointer;
+  color: var(--color-light-accent);
+}
+
+.unselectable {
+  user-select: none;
+}
+
+body.dark {
+  background-color: var(--color-dark-bg);
+  color: var(--color-dark-text);
+}
+
+body.dark a {
+  color: var(--color-dark-accent);
+}
+
 #output {
   font-size: 16vw;
   user-select: none;
 }
-
