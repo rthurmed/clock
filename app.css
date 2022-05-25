@@ -18,6 +18,10 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+.no-animate {
+  transition: all 0s;
+}
+
 body {
   display: flex;
   flex-direction: column;

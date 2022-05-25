@@ -26,5 +26,7 @@ const enabledSystemDarkMode = (
 )
 
 if (enabledSystemDarkMode || localStorage.getItem('dark') === "true") {
+  document.body.classList.add('no-animate')
   toggleDarkMode()
+  document.body.classList.remove('no-animate')
 }
