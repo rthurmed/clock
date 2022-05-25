@@ -8,6 +8,7 @@
   --color-light-bg: #eee;
 
   --transition-time: 1s;
+  --easing: ease-out;
 }
 
 * {
@@ -27,7 +28,9 @@ body {
   background-color: var(--color-light-bg);
   color: var(--color-light-text);
 
-  transition: background-color var(--transition-time), color var(--transition-time);
+  transition:
+    background-color var(--transition-time) var(--easing),
+    color var(--transition-time) var(--easing);
 }
 
 main, footer {
@@ -45,7 +48,7 @@ footer {
 a {
   cursor: pointer;
   color: var(--color-light-accent);
-  transition: color var(--transition-time);
+  transition: color var(--transition-time) var(--easing);
 }
 
 .unselectable {
