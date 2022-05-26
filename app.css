@@ -7,6 +7,10 @@
   --color-light-text: #333;
   --color-light-bg: #eee;
 
+  --color-accent: var(--color-light-accent);
+  --color-text: var(--color-light-text);
+  --color-bg: var(--color-light-bg);
+
   --transition-time: 1s;
   --easing: ease-out;
 }
@@ -29,8 +33,8 @@ body {
 
   height: 100vh;
 
-  background-color: var(--color-light-bg);
-  color: var(--color-light-text);
+  background-color: var(--color-bg);
+  color: var(--color-text);
 
   transition:
     background-color var(--transition-time) var(--easing),
@@ -51,7 +55,7 @@ footer {
 
 a {
   cursor: pointer;
-  color: var(--color-light-accent);
+  color: var(--color-accent);
   transition: color var(--transition-time) var(--easing);
 }
 
@@ -59,13 +63,11 @@ a {
   user-select: none;
 }
 
-body.dark {
-  background-color: var(--color-dark-bg);
-  color: var(--color-dark-text);
-}
-
-body.dark a {
-  color: var(--color-dark-accent);
+body.dark,
+body.dark * {
+  --color-accent: var(--color-dark-accent);
+  --color-text: var(--color-dark-text);
+  --color-bg: var(--color-dark-bg);
 }
 
 #output {
