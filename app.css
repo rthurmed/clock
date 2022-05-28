@@ -63,8 +63,7 @@ a {
   user-select: none;
 }
 
-body.dark,
-body.dark * {
+html.dark * {
   --color-accent: var(--color-dark-accent);
   --color-text: var(--color-dark-text);
   --color-bg: var(--color-dark-bg);
