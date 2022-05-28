@@ -19,7 +19,7 @@
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Cousine', monospace;
 }
 
 .no-animate {
@@ -31,7 +31,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  height: 100vh;
+  min-height: 100vh;
 
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -46,7 +46,7 @@ main, footer {
 }
 
 main {
-  margin-top: 30vh;
+  margin-top: 25vh;
 }
 
 footer {
